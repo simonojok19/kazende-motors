@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-boda-list',
@@ -7,8 +8,11 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./boda-list.component.scss']
 })
 export class BodaListComponent implements OnInit {
+  bodas$: Observable<any[]>;
 
-  constructor(db: AngularFirestore) {}
+  constructor(db: AngularFirestore) {
+    this.bodas$ = db.collection('riders').valueChanges();
+  }
 
   ngOnInit(): void {
   }
