@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 
+import { AngularFireModule } from '@angular/fire'
+
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +21,8 @@ import { from } from 'rxjs';
     BrowserAnimationsModule,
     MatIconModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
