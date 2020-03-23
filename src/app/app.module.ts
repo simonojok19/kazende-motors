@@ -14,9 +14,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
+import { BodaListComponent } from './boda-list/boda-list.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BodaListComponent
   ],
   imports: [
     BrowserModule,
