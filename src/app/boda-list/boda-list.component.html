@@ -1,1 +1,5 @@
-<p>boda-list works!</p>
+<ul>
+  <li class="text" *ngFor="let boda of bodas$ | async">
+    {{ boda.first_name }}
+  </li>
+</ul>
