@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyA5w5VO-fjjk39wrouLXcr0R_eZK8ImZ5o",
+    authDomain: "kazende-motors-e663a.firebaseapp.com",
+    databaseURL: "https://kazende-motors-e663a.firebaseio.com",
+    projectId: "kazende-motors-e663a",
+    storageBucket: "kazende-motors-e663a.appspot.com",
+    messagingSenderId: "455156536150",
+    appId: "1:455156536150:web:f97a99d24767fe72a2fcf7",
+    measurementId: "G-F6ZZB9W9NY"
+  }
 };
 
 /*
